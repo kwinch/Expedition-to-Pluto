@@ -1,0 +1,1448 @@
+[gd_scene format=3 uid="uid://cpkmvlug7mn55"]
+
+[ext_resource type="Texture2D" uid="uid://dbgru3fdo4brt" path="res://assets/Sprite_Up_Key.png" id="1_4c57u"]
+[ext_resource type="Texture2D" uid="uid://biuonjplnkund" path="res://assets/Background_Full_Game_Metal.png" id="1_w48qg"]
+[ext_resource type="Texture2D" uid="uid://b2c6kccgixwig" path="res://assets/Background_pluto_map_FINAL.png" id="2_1vm84"]
+[ext_resource type="Texture2D" uid="uid://cr5h680mpqdxr" path="res://assets/Sprite_Info_Button.png" id="2_gngh3"]
+[ext_resource type="Texture2D" uid="uid://diewc1vatfi8w" path="res://assets/Asset_Frog_Rover.png" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://ninbwt7k3qg8" path="res://assets/Sprite_Down_Key.png" id="2_ycdy4"]
+[ext_resource type="Script" uid="uid://dro3y77uo6chm" path="res://rover.gd" id="3_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://dn0cwwiq8oq5y" path="res://assets/Sprite_Left_Key.png" id="3_w48qg"]
+[ext_resource type="Texture2D" uid="uid://b0cewu5mgv5iv" path="res://assets/Asset_Arrow.png" id="4_1bvp3"]
+[ext_resource type="Script" uid="uid://b7kurssctr2ra" path="res://info.gd" id="4_vieuh"]
+[ext_resource type="Texture2D" uid="uid://0tml2v41wh0a" path="res://assets/Sprite_Right_Key.png" id="4_vivmo"]
+[ext_resource type="Script" uid="uid://dgv200vdjqmjv" path="res://arrow.gd" id="5_lquwl"]
+[ext_resource type="Script" uid="uid://bu0bxlyji1kxr" path="res://fact_0.gd" id="5_yjja3"]
+[ext_resource type="Texture2D" uid="uid://2rnr81t1r2eb" path="res://assets/Sprite_Arrow_Front.png" id="6_kq58d"]
+[ext_resource type="Script" uid="uid://bkjqsemmnm4yx" path="res://fact_1.gd" id="6_ywjan"]
+[ext_resource type="Script" uid="uid://c5cst3r8r4xta" path="res://indicator.gd" id="7_5vw27"]
+[ext_resource type="Script" uid="uid://nyvujnt5gnrj" path="res://Clock.gd" id="7_272bh"]
+[ext_resource type="Script" uid="uid://dculvpqqpk8yu" path="res://fact_2.gd" id="7_m74q3"]
+[ext_resource type="Texture2D" uid="uid://u3ogi0f1eg4f" path="res://assets/Sprite_Arrow_Back.png" id="7_seu75"]
+[ext_resource type="Script" uid="uid://cox6nnaivyv35" path="res://gallery_collection.gd" id="8_5vw27"]
+[ext_resource type="Script" uid="uid://dxcioxxu54d77" path="res://gallery_window.gd" id="8_kek77"]
+[ext_resource type="Script" uid="uid://drk3vg2ow3apj" path="res://fact_3.gd" id="8_tko6h"]
+[ext_resource type="Script" uid="uid://c3cstwl80komm" path="res://fact_4.gd" id="9_am8a1"]
+[ext_resource type="Script" uid="uid://3h6utfse2xth" path="res://fact_5.gd" id="10_8dc3g"]
+[ext_resource type="Script" uid="uid://dmm5147sw3s58" path="res://fact_6.gd" id="11_htgcl"]
+[ext_resource type="Script" uid="uid://etxpiit6nvqt" path="res://fact_7.gd" id="12_smeu8"]
+[ext_resource type="Script" uid="uid://c7qypqjjbiu6q" path="res://fact_8.gd" id="13_f3y11"]
+[ext_resource type="Texture2D" uid="uid://pvgab0hp34o3" path="res://assets/Sprite_Day_Icon.png" id="13_htxhm"]
+[ext_resource type="Texture2D" uid="uid://3xi87o8uap0u" path="res://assets/Sprite_Battery_0.png" id="13_xuqvo"]
+[ext_resource type="Texture2D" uid="uid://dcp4x5l4xgcob" path="res://assets/Sprite_Night_Icon.png" id="14_jq2sk"]
+[ext_resource type="Texture2D" uid="uid://cjwallf2kcxb" path="res://assets/Sprite_Battery_1.png" id="14_qsp4k"]
+[ext_resource type="Texture2D" uid="uid://ccdbphuye34qa" path="res://assets/Sprite_Sunset_Sunrise_Icon_Real.png" id="15_jq2sk"]
+[ext_resource type="Texture2D" uid="uid://bg253uwqtbm7m" path="res://assets/Sprite_Battery_2.png" id="15_kq58d"]
+[ext_resource type="Script" uid="uid://cvdaveeu81j88" path="res://hp.gd" id="15_ryguw"]
+[ext_resource type="Texture2D" uid="uid://cktxumqgbwfwa" path="res://assets/Sprite_Bar_1.png" id="16_d13ii"]
+[ext_resource type="Texture2D" uid="uid://cd5lsfrj47tbj" path="res://assets/Sprite_Battery_4.png" id="16_seu75"]
+[ext_resource type="Texture2D" uid="uid://c0x4tm60tb2da" path="res://assets/Sprite_Bar_2.png" id="17_1u8w0"]
+[ext_resource type="Texture2D" uid="uid://bnr4hvwh7s4bw" path="res://assets/Sprite_Battery_5.png" id="17_htxhm"]
+[ext_resource type="Texture2D" uid="uid://4oqd58mahoel" path="res://assets/Sprite_Bar_3.png" id="18_0odxb"]
+[ext_resource type="Script" uid="uid://ccs2cbxmly2s6" path="res://battery.gd" id="18_jq2sk"]
+[ext_resource type="Texture2D" uid="uid://c5rsr3ojtg2ie" path="res://assets/Sprite_Bar_4.png" id="19_lswn8"]
+[ext_resource type="Texture2D" uid="uid://ocy0w0hh7s1v" path="res://assets/Sprite_Bar_Empty.png" id="20_a6jrf"]
+[ext_resource type="Texture2D" uid="uid://c10m5mf5kviy2" path="res://assets/Sprite_Bar_5_Real.png" id="21_xuqvo"]
+[ext_resource type="Script" uid="uid://depkewtm7mbuh" path="res://hp_bar.gd" id="22_qsp4k"]
+[ext_resource type="Texture2D" uid="uid://cgbagh2edcpnc" path="res://assets/Sprite_Camera_Icon.png" id="22_seu75"]
+[ext_resource type="Texture2D" uid="uid://580e5qrin7mu" path="res://assets/Sprite_Weather_Clear.png" id="23_h8e4i"]
+[ext_resource type="Texture2D" uid="uid://npvr2pg33eex" path="res://assets/sprite_Weather_Ice_Volcano.png" id="24_4lmeg"]
+[ext_resource type="Texture2D" uid="uid://dlknvs1v7pmbw" path="res://assets/Sprite_Weather_Meteor_Shower.png" id="25_0cp0l"]
+[ext_resource type="Texture2D" uid="uid://cu4gkhbja7pvy" path="res://assets/Sprite_Home_Base.png" id="25_ovcoh"]
+[ext_resource type="Texture2D" uid="uid://dr6nrk5i1aj73" path="res://assets/Sprite_Weather_Sunny.png" id="26_d2t1y"]
+[ext_resource type="Script" uid="uid://bsphcoc2n3nln" path="res://base.gd" id="26_ppx11"]
+[ext_resource type="Texture2D" uid="uid://boecbv847123n" path="res://assets/Sprite_Weather_Light_Wind.png" id="27_gngh3"]
+[ext_resource type="Script" uid="uid://20ffy73lylj1" path="res://weather.gd" id="32_23xmf"]
+[ext_resource type="Texture2D" uid="uid://dt1st1us01pfr" path="res://assets/Sprite_Sample_Empty.png" id="34_0rl1p"]
+[ext_resource type="Script" uid="uid://b5od4rgpgx7qr" path="res://sample_window.gd" id="35_0rl1p"]
+[ext_resource type="Texture2D" uid="uid://5e40avvn36t8" path="res://assets/Sprite_Vista_Point.png" id="37_0n3wm"]
+[ext_resource type="Script" uid="uid://b16jnrjeojh8x" path="res://vistapoint.gd" id="37_e71vb"]
+[ext_resource type="Script" uid="uid://cx86eqi72mrob" path="res://ice.gd" id="39_uatky"]
+[ext_resource type="Script" uid="uid://bp5abum5jajtj" path="res://mo_info.gd" id="40_rm4vd"]
+[ext_resource type="Script" uid="uid://d1yi1f411vp0t" path="res://window_ice.gd" id="40_rqtf5"]
+[ext_resource type="Texture2D" uid="uid://dlr7po2ljq6tn" path="res://assets/Sprite_Sample.png" id="41_0n3wm"]
+[ext_resource type="Texture2D" uid="uid://2lggtm43ps5i" path="res://assets/Background_Lab_Sample_Ice_water_Not_including_the_little_guy_who_is_to_be_added.png" id="41_pjyto"]
+[ext_resource type="Texture2D" uid="uid://b56b8ygh8fgn6" path="res://assets/Sprite_Meteor_Shower.png" id="41_swlj1"]
+[ext_resource type="Texture2D" uid="uid://6w7aw8gnlfjq" path="res://assets/Sprite_Rock_Sample.png" id="42_qnost"]
+[ext_resource type="Script" uid="uid://b7y1430uovacd" path="res://rock.gd" id="42_rqtf5"]
+[ext_resource type="Script" uid="uid://bosylfxo1wgri" path="res://meteor.gd" id="42_yysqy"]
+[ext_resource type="Script" uid="uid://cocsoisrxwxbi" path="res://window_rock.gd" id="43_1vm84"]
+[ext_resource type="Texture2D" uid="uid://bssfgsodiuw20" path="res://assets/Sprite_Ice_Mountain.png" id="43_n5t1e"]
+[ext_resource type="Script" uid="uid://vh5vpfb62u2r" path="res://window.gd" id="43_sm6fg"]
+[ext_resource type="Texture2D" uid="uid://b6kh0jc81huex" path="res://assets/Sprite_Extremophile.png" id="43_wnkbs"]
+[ext_resource type="Texture2D" uid="uid://cq2rnr5x4hqp4" path="res://assets/Sprite_Ice_Volcano_Active.png" id="44_h6isl"]
+[ext_resource type="Script" uid="uid://duy62qk8iqntp" path="res://mountain.gd" id="44_swlj1"]
+[ext_resource type="Script" uid="uid://42ss3uip66re" path="res://sample_amount.gd" id="45_b17eg"]
+[ext_resource type="Script" uid="uid://0h281ukc1kio" path="res://microorganism_window.gd" id="46_b17eg"]
+[ext_resource type="Script" uid="uid://rvffdyn7q3tm" path="res://start.gd" id="46_hrvbo"]
+[ext_resource type="Script" uid="uid://csnpcym1o651k" path="res://eruption.gd" id="46_yysqy"]
+[ext_resource type="Script" uid="uid://c75ucesaedpyg" path="res://frame.gd" id="47_uypp3"]
+[ext_resource type="Texture2D" uid="uid://duargwo0y34s6" path="res://assets/Sprite_OC_Sad.png" id="48_4w656"]
+[ext_resource type="Texture2D" uid="uid://b433yjh0gfgvp" path="res://assets/Sprite_OC_1.png" id="48_blkrb"]
+[ext_resource type="Script" uid="uid://c2f22lax5qqw6" path="res://spacerock_window.gd" id="48_sm6fg"]
+[ext_resource type="Script" uid="uid://dm3fq0pswgog3" path="res://text_1.gd" id="49_abqjc"]
+[ext_resource type="Script" uid="uid://cndrcqfa24u57" path="res://doctorsad.gd" id="49_e71vb"]
+[ext_resource type="Script" uid="uid://bb4hwd75mpym5" path="res://text_2.gd" id="50_6iyjs"]
+[ext_resource type="Script" uid="uid://82cr33353q45" path="res://icesample_window.gd" id="50_b17eg"]
+[ext_resource type="Script" uid="uid://ck3p3e6tbkvnl" path="res://text_3.gd" id="51_blkrb"]
+[ext_resource type="Script" uid="uid://bva24u6mbaf54" path="res://doctor.gd" id="51_rnkwl"]
+[ext_resource type="Script" uid="uid://t2j7j5wijd4q" path="res://rover_frame.gd" id="51_uypp3"]
+[ext_resource type="Script" uid="uid://dntfgxa8sjpmi" path="res://valley.gd" id="57_0dhbp"]
+[ext_resource type="Texture2D" uid="uid://dssaecvgupw2r" path="res://assets/Background_Valley.png" id="58_34ol3"]
+[ext_resource type="Script" uid="uid://bb18kterq3tv0" path="res://volcano.gd" id="58_jx0wj"]
+[ext_resource type="Script" uid="uid://b8vwjk4xihdil" path="res://valley_photo.gd" id="59_c2n8d"]
+[ext_resource type="Script" uid="uid://bgp7578w5rss4" path="res://sunset.gd" id="59_kkkcx"]
+[ext_resource type="Script" uid="uid://d4kvr02a4xmp1" path="res://button_next.gd" id="59_sn1fb"]
+[ext_resource type="Texture2D" uid="uid://gbf0qqaky4x2" path="res://assets/Sprite_Camera_Lense.png" id="60_wy5fy"]
+[ext_resource type="Texture2D" uid="uid://ddirsy431ifat" path="res://assets/Background_Ice_Volcano_REAL.png" id="62_5dllo"]
+[ext_resource type="Script" uid="uid://b82f1fj135jtt" path="res://volcano_photo.gd" id="62_wy5fy"]
+[ext_resource type="Script" uid="uid://dqspprwwhdftj" path="res://sunset_photo.gd" id="64_gx4rg"]
+[ext_resource type="Texture2D" uid="uid://hs3fdkpoewnm" path="res://assets/Background_Sunrise_Sunset.png" id="65_phcyf"]
+[ext_resource type="Script" uid="uid://bxf6kj1c5ixr5" path="res://volcano_text.gd" id="69_birbe"]
+[ext_resource type="Script" uid="uid://pkhxepyqt2cs" path="res://valley_text.gd" id="70_f1p13"]
+[ext_resource type="Script" uid="uid://2rsgk3pxgag0" path="res://sunset_text.gd" id="71_f1p13"]
+[ext_resource type="Script" uid="uid://bncj34pxtm7mi" path="res://enter_rover_name.gd" id="91_lwnsi"]
+[ext_resource type="Script" uid="uid://bl77poixqig0i" path="res://finish_button.gd" id="91_n5t1e"]
+[ext_resource type="Script" uid="uid://bk3a3hwqovmay" path="res://button_3.gd" id="92_41lik"]
+[ext_resource type="Script" uid="uid://ddnn7pvu7ygok" path="res://color_rect.gd" id="92_h6isl"]
+[ext_resource type="Texture2D" uid="uid://diixlan2u82bl" path="res://assets/Sprite_OC_Nobel_Prize.png" id="93_53bls"]
+[ext_resource type="Script" uid="uid://civjfnh2q5tfd" path="res://award.gd" id="96_jbvwl"]
+[ext_resource type="Script" uid="uid://bx77vejp2g2ih" path="res://game_over.gd" id="98_yvsr8"]
+[ext_resource type="AudioStream" uid="uid://6vtmrkqun7no" path="res://NASA _ Sun Sonification (raw audio).mp3" id="104_tko6h"]
+[ext_resource type="Script" uid="uid://b4vvapr4n6jav" path="res://audio_stream_player_2d.gd" id="105_am8a1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fgmpx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_htxhm")
+}],
+"loop": 1,
+"name": &"day",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_jq2sk")
+}],
+"loop": 1,
+"name": &"night",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_jq2sk")
+}],
+"loop": 1,
+"name": &"sunset",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0jhvc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_xuqvo")
+}],
+"loop": 1,
+"name": &"Battery_1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_qsp4k")
+}],
+"loop": 1,
+"name": &"Battery_2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_kq58d")
+}],
+"loop": 1,
+"name": &"Battery_3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_seu75")
+}],
+"loop": 1,
+"name": &"Battery_4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_htxhm")
+}],
+"loop": 1,
+"name": &"Battery_5",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_61sma"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_h8e4i")
+}],
+"loop": 1,
+"name": &"Clear",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_4lmeg")
+}],
+"loop": 1,
+"name": &"Ice_Volcano",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_0cp0l")
+}],
+"loop": 1,
+"name": &"Meteor",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_d2t1y")
+}],
+"loop": 1,
+"name": &"Sunny",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_gngh3")
+}],
+"loop": 1,
+"name": &"Wind",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v2wse"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_d13ii")
+}],
+"loop": 1,
+"name": &"HP_1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_1u8w0")
+}],
+"loop": 1,
+"name": &"HP_2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_0odxb")
+}],
+"loop": 1,
+"name": &"HP_3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_lswn8")
+}],
+"loop": 1,
+"name": &"HP_4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_a6jrf")
+}],
+"loop": 1,
+"name": &"HP_Empty",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_xuqvo")
+}],
+"loop": 1,
+"name": &"HP_Full",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=1905638644]
+
+[node name="MetalHud" type="TextureRect" parent="." unique_id=1130036138]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_w48qg")
+
+[node name="Map" type="TextureRect" parent="MetalHud" unique_id=1095805760]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 50.0
+offset_right = 1655.0
+offset_bottom = 1512.0
+scale = Vector2(0.67, 0.67)
+texture = ExtResource("2_1vm84")
+
+[node name="InfoFrame" type="ColorRect" parent="." unique_id=669858966]
+offset_left = 1179.0
+offset_top = 50.0
+offset_right = 1875.0
+offset_bottom = 373.0
+color = Color(0.28235295, 0.28235295, 0.28235295, 1)
+
+[node name="Info" type="TextureButton" parent="InfoFrame" unique_id=1051953796]
+layout_mode = 0
+offset_left = 609.0
+offset_top = 12.0
+offset_right = 683.0
+offset_bottom = 86.0
+texture_normal = ExtResource("2_gngh3")
+script = ExtResource("4_vieuh")
+
+[node name="Fact0" type="Label" parent="InfoFrame/Info" unique_id=591458247]
+visible = false
+layout_mode = 0
+offset_left = -356.0
+offset_top = 69.0
+offset_right = 25.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 20
+text = "Use the \"info\" icon for tips!"
+script = ExtResource("5_yjja3")
+
+[node name="Fact1" type="Label" parent="InfoFrame/Info" unique_id=1005034664]
+visible = false
+layout_mode = 0
+offset_left = -356.0
+offset_top = 69.0
+offset_right = -290.0
+offset_bottom = 119.0
+theme_override_font_sizes/font_size = 20
+text = "The surface of Pluto can  drop to -387 
+degrees Fahrenheight. As far as I know, 
+that's too cold to support any living 
+organism."
+script = ExtResource("6_ywjan")
+
+[node name="Fact2" type="Label" parent="InfoFrame/Info" unique_id=1402838041]
+visible = false
+layout_mode = 0
+offset_left = -356.0
+offset_top = 69.0
+offset_right = -290.0
+offset_bottom = 119.0
+theme_override_font_sizes/font_size = 20
+text = "It takes Pluto about seven Earth days to 
+complete a single rotation. That means a
+day on Pluto is ~156 hours."
+script = ExtResource("7_m74q3")
+
+[node name="Fact3" type="Label" parent="InfoFrame/Info" unique_id=83794680]
+visible = false
+layout_mode = 0
+offset_left = -356.0
+offset_top = 69.0
+offset_right = -290.0
+offset_bottom = 119.0
+theme_override_font_sizes/font_size = 20
+text = "The Sun from Pluto is 1/900 the brightness
+of the Sun from Earth."
+script = ExtResource("8_tko6h")
+
+[node name="Fact4" type="Label" parent="InfoFrame/Info" unique_id=298691869]
+visible = false
+layout_mode = 0
+offset_left = -356.0
+offset_top = 69.0
+offset_right = -290.0
+offset_bottom = 119.0
+theme_override_font_sizes/font_size = 20
+text = "The surface of Pluto is covered in glaciers 
+of frozen nitrogen, steep cliffs and craters,
+and cryovolcanoes that erupt water ice 
+and ammonia."
+script = ExtResource("9_am8a1")
+
+[node name="Fact5" type="Label" parent="InfoFrame/Info" unique_id=423609224]
+visible = false
+layout_mode = 0
+offset_left = -356.0
+offset_top = 69.0
+offset_right = -290.0
+offset_bottom = 119.0
+theme_override_font_sizes/font_size = 20
+text = "The rover is powered by solar panels. If 
+the Sun sets or is obstructed by weather,
+the rover won't be able to recharge and
+will lose power."
+script = ExtResource("10_8dc3g")
+
+[node name="Fact6" type="Label" parent="InfoFrame/Info" unique_id=1283707056]
+visible = false
+layout_mode = 0
+offset_left = -356.0
+offset_top = 69.0
+offset_right = -290.0
+offset_bottom = 119.0
+theme_override_font_sizes/font_size = 20
+text = "The rover uses a dome covered in solar
+panels as its home base. It will be able 
+to draw on its power reserves when it
+returns to its base."
+script = ExtResource("11_htgcl")
+
+[node name="Fact7" type="Label" parent="InfoFrame/Info" unique_id=949804589]
+visible = false
+layout_mode = 0
+offset_left = -356.0
+offset_top = 69.0
+offset_right = -290.0
+offset_bottom = 119.0
+theme_override_font_sizes/font_size = 20
+text = "Significant damage to the rover cannot be
+repaired. It's a good thing we send rovers 
+to Pluto, and not people."
+script = ExtResource("12_smeu8")
+
+[node name="Fact8" type="Label" parent="InfoFrame/Info" unique_id=433766517]
+visible = false
+layout_mode = 0
+offset_left = -356.0
+offset_top = 69.0
+offset_right = -290.0
+offset_bottom = 119.0
+theme_override_font_sizes/font_size = 20
+text = "Some photos and samples may only be 
+available under certain conditions."
+script = ExtResource("13_f3y11")
+
+[node name="her" type="Sprite2D" parent="InfoFrame" unique_id=471334846]
+position = Vector2(126, 159.99998)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("48_blkrb")
+
+[node name="nameplate" type="Label" parent="InfoFrame" unique_id=723638294]
+layout_mode = 0
+offset_left = 250.0
+offset_top = 21.0
+offset_right = 463.0
+offset_bottom = 76.0
+theme_override_font_sizes/font_size = 40
+text = "Dr. Hopper"
+
+[node name="Rover Controls" type="Control" parent="." unique_id=1900609368]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Forward" type="TextureButton" parent="Rover Controls" unique_id=1939679199]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1310.0
+offset_top = 734.0
+offset_right = 1409.0
+offset_bottom = 835.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("1_4c57u")
+
+[node name="Backward" type="TextureButton" parent="Rover Controls" unique_id=647817697]
+layout_mode = 0
+offset_left = 1311.0
+offset_top = 888.0
+offset_right = 1450.0
+offset_bottom = 1029.0
+texture_normal = ExtResource("2_ycdy4")
+
+[node name="Left" type="TextureButton" parent="Rover Controls" unique_id=589626861]
+layout_mode = 0
+offset_left = 1157.0
+offset_top = 888.0
+offset_right = 1296.0
+offset_bottom = 1027.0
+texture_normal = ExtResource("3_w48qg")
+
+[node name="Right" type="TextureButton" parent="Rover Controls" unique_id=1392772410]
+layout_mode = 0
+offset_left = 1463.0
+offset_top = 888.0
+offset_right = 1605.0
+offset_bottom = 1027.0
+texture_normal = ExtResource("4_vivmo")
+
+[node name="RotateClockwise" type="TextureButton" parent="Rover Controls" unique_id=1002646313]
+layout_mode = 0
+offset_left = 1486.0
+offset_top = 753.0
+offset_right = 1583.0
+offset_bottom = 850.0
+texture_normal = ExtResource("6_kq58d")
+
+[node name="RotateCounterClockwise" type="TextureButton" parent="Rover Controls" unique_id=97487181]
+layout_mode = 0
+offset_left = 1182.0
+offset_top = 751.0
+offset_right = 1280.0
+offset_bottom = 849.0
+texture_normal = ExtResource("7_seu75")
+
+[node name="Rover" type="Sprite2D" parent="." unique_id=40044746]
+position = Vector2(1047, 978.99994)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_h2yge")
+script = ExtResource("3_1bvp3")
+
+[node name="Arrow" type="Sprite2D" parent="Rover" unique_id=670360319]
+texture = ExtResource("4_1bvp3")
+script = ExtResource("5_lquwl")
+
+[node name="Time Control" type="Control" parent="." unique_id=935187132]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Clock" type="Label" parent="Time Control" unique_id=1048556812]
+layout_mode = 0
+offset_left = 1249.0
+offset_top = 447.0
+offset_right = 1435.0
+offset_bottom = 535.0
+theme_override_colors/font_color = Color(1, 0.023529412, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "Time: "
+script = ExtResource("7_272bh")
+
+[node name="Indicator" type="AnimatedSprite2D" parent="Time Control/Clock" unique_id=510214375]
+position = Vector2(-47, 42)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_fgmpx")
+animation = &"sunset"
+script = ExtResource("7_5vw27")
+
+[node name="Battery" type="AnimatedSprite2D" parent="Time Control/Clock" unique_id=511787845]
+position = Vector2(94, 182)
+scale = Vector2(1.25, 1.25)
+sprite_frames = SubResource("SpriteFrames_0jhvc")
+animation = &"Battery_1"
+script = ExtResource("18_jq2sk")
+
+[node name="Base" type="Sprite2D" parent="Time Control/Clock/Battery" unique_id=1553326784]
+position = Vector2(-948.80005, -231.19995)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("25_ovcoh")
+script = ExtResource("26_ppx11")
+
+[node name="Weather" type="AnimatedSprite2D" parent="Time Control" unique_id=1934287331]
+position = Vector2(1758, 769)
+sprite_frames = SubResource("SpriteFrames_61sma")
+animation = &"Sunny"
+script = ExtResource("32_23xmf")
+
+[node name="HP" type="Control" parent="." unique_id=1235926473]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("15_ryguw")
+
+[node name="HPBar" type="AnimatedSprite2D" parent="HP" unique_id=102526932]
+position = Vector2(1524, 408)
+scale = Vector2(0.9, 0.9)
+sprite_frames = SubResource("SpriteFrames_v2wse")
+animation = &"HP_Full"
+script = ExtResource("22_qsp4k")
+
+[node name="Meteor" type="Sprite2D" parent="HP/HPBar" unique_id=1862294540]
+position = Vector2(-1015.55554, -156.66666)
+scale = Vector2(0.5555556, 0.5555556)
+texture = ExtResource("41_swlj1")
+script = ExtResource("42_yysqy")
+
+[node name="Mountain" type="Sprite2D" parent="HP/HPBar" unique_id=1722963370]
+position = Vector2(-1334.4445, 323.33337)
+scale = Vector2(0.5555556, 0.5555556)
+texture = ExtResource("43_n5t1e")
+script = ExtResource("44_swlj1")
+
+[node name="Eruption" type="Sprite2D" parent="HP/HPBar" unique_id=206197642]
+position = Vector2(-636.6666, 170.00003)
+scale = Vector2(0.5555556, 0.5555556)
+texture = ExtResource("44_h6isl")
+script = ExtResource("46_yysqy")
+
+[node name="Samples" type="Control" parent="." unique_id=656105695]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ice" type="TextureButton" parent="Samples" unique_id=231353668]
+layout_mode = 0
+offset_left = 133.0
+offset_top = 951.0
+offset_right = 133.0
+offset_bottom = 951.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("37_0n3wm")
+script = ExtResource("39_uatky")
+
+[node name="rock" type="TextureButton" parent="Samples" unique_id=572167321]
+layout_mode = 0
+offset_left = 945.0
+offset_top = 161.0
+offset_right = 945.0
+offset_bottom = 161.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("37_0n3wm")
+script = ExtResource("42_rqtf5")
+
+[node name="microorganism" type="TextureButton" parent="Samples" unique_id=53739323]
+layout_mode = 0
+offset_left = 419.0
+offset_top = 444.0
+offset_right = 419.0
+offset_bottom = 444.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("37_0n3wm")
+script = ExtResource("37_e71vb")
+
+[node name="SampleCollection" type="TextureButton" parent="Samples" unique_id=192542886]
+layout_mode = 0
+offset_left = 1767.0
+offset_top = 914.0
+offset_right = 1874.0
+offset_bottom = 1051.0
+texture_normal = ExtResource("34_0rl1p")
+
+[node name="SampleAmount" type="Label" parent="Samples/SampleCollection" unique_id=157470709]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 106.0
+offset_right = 114.0
+offset_bottom = 148.0
+text = "/3 Samples"
+script = ExtResource("45_b17eg")
+
+[node name="Sample_Window" type="ColorRect" parent="Samples/SampleCollection" unique_id=589374568]
+visible = false
+layout_mode = 0
+offset_left = -1706.0
+offset_top = -572.0
+offset_right = 89.0
+offset_bottom = -189.0
+color = Color(0.20272335, 0.20272335, 0.20272332, 1)
+script = ExtResource("35_0rl1p")
+
+[node name="microorganism_window" type="Sprite2D" parent="Samples/SampleCollection/Sample_Window" unique_id=1142116463]
+position = Vector2(394, 191)
+scale = Vector2(2, 2)
+texture = ExtResource("43_wnkbs")
+script = ExtResource("46_b17eg")
+
+[node name="spacerock_window" type="Sprite2D" parent="Samples/SampleCollection/Sample_Window" unique_id=419182058]
+position = Vector2(1399, 192)
+scale = Vector2(2, 2)
+texture = ExtResource("42_qnost")
+script = ExtResource("48_sm6fg")
+
+[node name="icesample_window" type="Sprite2D" parent="Samples/SampleCollection/Sample_Window" unique_id=1212698092]
+position = Vector2(911, 178)
+scale = Vector2(2, 2)
+texture = ExtResource("41_0n3wm")
+script = ExtResource("50_b17eg")
+
+[node name="Exit" type="Button" parent="Samples/SampleCollection/Sample_Window" unique_id=204303443]
+layout_mode = 0
+offset_left = 1726.0
+offset_top = 3.0
+offset_right = 1795.0
+offset_bottom = 77.0
+theme_override_font_sizes/font_size = 50
+text = "X"
+
+[node name="Gallery" type="Control" parent="." unique_id=270386988]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Valley" type="TextureButton" parent="Gallery" unique_id=1995812805]
+layout_mode = 0
+offset_left = 782.0
+offset_top = 182.0
+offset_right = 871.0
+offset_bottom = 267.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("22_seu75")
+script = ExtResource("57_0dhbp")
+
+[node name="Volcano" type="TextureButton" parent="Gallery" unique_id=1402551225]
+layout_mode = 0
+offset_left = 884.0
+offset_top = 622.0
+offset_right = 973.0
+offset_bottom = 707.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("22_seu75")
+script = ExtResource("58_jx0wj")
+
+[node name="Sunset" type="TextureButton" parent="Gallery" unique_id=65058520]
+layout_mode = 0
+offset_left = 283.0
+offset_top = 106.0
+offset_right = 372.0
+offset_bottom = 191.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("22_seu75")
+script = ExtResource("59_kkkcx")
+
+[node name="Camera" type="TextureButton" parent="Gallery" unique_id=1469373720]
+layout_mode = 0
+offset_left = 1639.0
+offset_top = 936.0
+offset_right = 1728.0
+offset_bottom = 1021.0
+texture_normal = ExtResource("22_seu75")
+
+[node name="Gallery_Collection" type="Label" parent="Gallery/Camera" unique_id=1143455021]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 86.0
+offset_right = 76.0
+offset_bottom = 109.0
+text = "/3 Photos"
+script = ExtResource("8_5vw27")
+
+[node name="Gallery_Window" type="ColorRect" parent="Gallery/Camera" unique_id=404374003]
+visible = false
+layout_mode = 0
+offset_left = -1590.0
+offset_top = -688.0
+offset_right = 221.0
+offset_bottom = -119.0
+color = Color(0.20272335, 0.20272335, 0.20272332, 1)
+script = ExtResource("8_kek77")
+
+[node name="Exit" type="Button" parent="Gallery/Camera/Gallery_Window" unique_id=1590669616]
+layout_mode = 0
+offset_left = 1740.0
+offset_top = 1.0
+offset_right = 1809.0
+offset_bottom = 78.0
+theme_override_font_sizes/font_size = 50
+text = "X"
+
+[node name="Volcano_text" type="TextureRect" parent="Gallery/Camera/Gallery_Window" unique_id=875248876]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 41.000015
+offset_right = 1665.0
+offset_bottom = 1519.0
+scale = Vector2(0.33, 0.33)
+texture = ExtResource("62_5dllo")
+script = ExtResource("69_birbe")
+
+[node name="Valley_text" type="TextureRect" parent="Gallery/Camera/Gallery_Window" unique_id=638660717]
+layout_mode = 0
+offset_left = 616.0
+offset_top = 43.0
+offset_right = 2238.0
+offset_bottom = 1521.0
+scale = Vector2(0.33, 0.33)
+texture = ExtResource("58_34ol3")
+script = ExtResource("70_f1p13")
+
+[node name="Sunset_text" type="TextureRect" parent="Gallery/Camera/Gallery_Window" unique_id=1321771782]
+layout_mode = 0
+offset_left = 1193.0001
+offset_top = 43.000015
+offset_right = 2815.0
+offset_bottom = 1521.0
+scale = Vector2(0.33, 0.33)
+texture = ExtResource("65_phcyf")
+script = ExtResource("71_f1p13")
+
+[node name="map_samples" type="Control" parent="." unique_id=407363896]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Volcano_photo" type="TextureRect" parent="map_samples" unique_id=917975159]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 46.0
+offset_right = 1662.0
+offset_bottom = 1524.0
+scale = Vector2(0.67, 0.67)
+texture = ExtResource("62_5dllo")
+script = ExtResource("62_wy5fy")
+
+[node name="CameraLens" type="TextureRect" parent="map_samples/Volcano_photo" unique_id=1586507742]
+layout_mode = 0
+offset_left = 3.0007553
+offset_top = 18.004478
+offset_right = 531.00073
+offset_bottom = 490.0045
+scale = Vector2(3.05, 3.05)
+texture = ExtResource("60_wy5fy")
+
+[node name="exitVolcano" type="Button" parent="map_samples/Volcano_photo" unique_id=1318640445]
+layout_mode = 0
+offset_left = 1510.8774
+offset_top = 3.0007267
+offset_right = 1622.8774
+offset_bottom = 121.000725
+theme_override_font_sizes/font_size = 80
+text = "x"
+
+[node name="ColorRect" type="ColorRect" parent="map_samples/Volcano_photo" unique_id=2105461877]
+layout_mode = 0
+offset_left = 25.373133
+offset_top = 1244.776
+offset_right = 895.52234
+offset_bottom = 1459.7014
+color = Color(0.28235295, 0.28235295, 0.28235295, 1)
+
+[node name="Label" type="Label" parent="map_samples/Volcano_photo/ColorRect" unique_id=148949704]
+layout_mode = 0
+offset_left = 20.895521
+offset_top = 26.86576
+offset_right = 765.8955
+offset_bottom = 135.86575
+theme_override_font_sizes/font_size = 38
+text = "A cryovolcano in the middle of eruption, 
+spewing ammonia and ice particles. "
+
+[node name="Valley_Photo" type="TextureRect" parent="map_samples" unique_id=632754702]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 48.000015
+offset_right = 1660.0
+offset_bottom = 1524.0
+scale = Vector2(0.67, 0.67)
+texture = ExtResource("58_34ol3")
+script = ExtResource("59_c2n8d")
+
+[node name="CameraLens" type="TextureRect" parent="map_samples/Valley_Photo" unique_id=999232807]
+layout_mode = 0
+offset_left = 3.0007553
+offset_top = 18.004478
+offset_right = 531.00073
+offset_bottom = 490.0045
+scale = Vector2(3.05, 3.05)
+texture = ExtResource("60_wy5fy")
+
+[node name="exitValley" type="Button" parent="map_samples/Valley_Photo" unique_id=1050298607]
+layout_mode = 0
+offset_left = 1510.8774
+offset_top = 3.0007267
+offset_right = 1622.8774
+offset_bottom = 121.000725
+theme_override_font_sizes/font_size = 80
+text = "x"
+
+[node name="ColorRect" type="ColorRect" parent="map_samples/Valley_Photo" unique_id=456746583]
+layout_mode = 0
+offset_left = 25.373133
+offset_top = 1244.776
+offset_right = 895.52234
+offset_bottom = 1459.7014
+color = Color(0.28235295, 0.28235295, 0.28235295, 1)
+
+[node name="Label" type="Label" parent="map_samples/Valley_Photo/ColorRect" unique_id=936220947]
+layout_mode = 0
+offset_left = 20.895521
+offset_top = 26.86576
+offset_right = 765.8955
+offset_bottom = 135.86575
+theme_override_font_sizes/font_size = 38
+text = "A steep valley created by a bombardment of
+meteors."
+
+[node name="window" type="ColorRect" parent="map_samples" unique_id=1473088405]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 49.0
+offset_right = 2210.0
+offset_bottom = 2007.0
+scale = Vector2(0.5, 0.5)
+color = Color(0.2677903, 0.2677903, 0.2677903, 1)
+script = ExtResource("43_sm6fg")
+
+[node name="Label" type="Label" parent="map_samples/window" unique_id=1156521515]
+layout_mode = 0
+offset_left = 452.0
+offset_top = 84.0
+offset_right = 1791.0
+offset_bottom = 194.0
+theme_override_font_sizes/font_size = 80
+text = "Congratulations! A Microorganism!"
+
+[node name="TextureRect" type="TextureRect" parent="map_samples/window" unique_id=1676434978]
+layout_mode = 0
+offset_left = 856.0
+offset_top = 258.0
+offset_right = 929.0
+offset_bottom = 374.0
+scale = Vector2(8, 8)
+texture = ExtResource("43_wnkbs")
+
+[node name="Label2" type="Label" parent="map_samples/window" unique_id=2114984702]
+layout_mode = 0
+offset_left = 170.0
+offset_top = 1200.0
+offset_right = 2034.0
+offset_bottom = 1341.0
+theme_override_font_sizes/font_size = 50
+text = "This single-cellular organism can thrive in even the most extreme conditions. 
+You may even call this an extremophile. Although microscopic, it's the first
+known living organism originating on another planet."
+
+[node name="Label3" type="Label" parent="map_samples/window" unique_id=62734602]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 1438.0
+offset_right = 1603.0
+offset_bottom = 1548.0
+theme_override_font_sizes/font_size = 80
+text = "What should it be called?"
+
+[node name="organismName" type="LineEdit" parent="map_samples/window" unique_id=349778928]
+layout_mode = 0
+offset_left = 518.0
+offset_top = 1550.0
+offset_right = 1754.0
+offset_bottom = 1730.0
+theme_override_font_sizes/font_size = 80
+placeholder_text = "Enter name:"
+
+[node name="ButtonNext" type="Button" parent="map_samples/window" unique_id=1338596803]
+layout_mode = 0
+offset_left = 1786.0
+offset_top = 1572.0
+offset_right = 1936.0
+offset_bottom = 1702.0
+theme_override_font_sizes/font_size = 80
+text = ">"
+script = ExtResource("59_sn1fb")
+
+[node name="mo_info" type="ColorRect" parent="map_samples" unique_id=2081007089]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 49.0
+offset_right = 2210.0
+offset_bottom = 2007.0
+scale = Vector2(0.5, 0.5)
+color = Color(0.2677903, 0.2677903, 0.2677903, 1)
+script = ExtResource("40_rm4vd")
+
+[node name="Label" type="Label" parent="map_samples/mo_info" unique_id=73281923]
+layout_mode = 0
+offset_left = 724.0
+offset_top = 62.0
+offset_right = 1457.0
+offset_bottom = 172.0
+theme_override_font_sizes/font_size = 80
+text = "Locate the Sample:"
+
+[node name="TextureRect" type="TextureRect" parent="map_samples/mo_info" unique_id=1505122813]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 214.0
+offset_right = 1820.0
+offset_bottom = 1688.0
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("41_pjyto")
+
+[node name="littleFella" type="TextureButton" parent="map_samples/mo_info" unique_id=1201398638]
+layout_mode = 0
+offset_left = 1146.0
+offset_top = 984.0
+offset_right = 1219.0
+offset_bottom = 1100.0
+rotation = 0.43633232
+scale = Vector2(1.5, 1.5)
+texture_normal = ExtResource("43_wnkbs")
+
+[node name="window_rock" type="ColorRect" parent="map_samples" unique_id=1107312035]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 52.0
+offset_right = 2207.0
+offset_bottom = 2010.0
+scale = Vector2(0.5, 0.5)
+color = Color(0.2677903, 0.2677903, 0.2677903, 1)
+script = ExtResource("43_1vm84")
+
+[node name="Label" type="Label" parent="map_samples/window_rock" unique_id=864378119]
+layout_mode = 0
+offset_left = 462.0
+offset_top = 94.0
+offset_right = 1801.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 80
+text = "Congratulations! A Rock Sample:"
+
+[node name="TextureRect" type="TextureRect" parent="map_samples/window_rock" unique_id=2055354677]
+layout_mode = 0
+offset_left = 694.0
+offset_top = 258.0
+offset_right = 800.0
+offset_bottom = 374.0
+scale = Vector2(8, 8)
+texture = ExtResource("42_qnost")
+
+[node name="Label2" type="Label" parent="map_samples/window_rock" unique_id=1063364932]
+layout_mode = 0
+offset_left = 170.0
+offset_top = 1200.0
+offset_right = 2034.0
+offset_bottom = 1341.0
+theme_override_font_sizes/font_size = 50
+text = "These rocks were formed from lava flows, evidence of warmer temperatures
+in Pluto's past. "
+
+[node name="ButtonRock" type="Button" parent="map_samples/window_rock" unique_id=1407261106]
+layout_mode = 0
+offset_left = 1786.0
+offset_top = 1572.0
+offset_right = 1936.0
+offset_bottom = 1702.0
+theme_override_font_sizes/font_size = 80
+text = ">"
+
+[node name="window_ice" type="ColorRect" parent="map_samples" unique_id=607592297]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 52.0
+offset_right = 2206.0
+offset_bottom = 2010.0
+scale = Vector2(0.5, 0.5)
+color = Color(0.2677903, 0.2677903, 0.2677903, 1)
+script = ExtResource("40_rqtf5")
+
+[node name="Label" type="Label" parent="map_samples/window_ice" unique_id=1344949989]
+layout_mode = 0
+offset_left = 462.0
+offset_top = 94.0
+offset_right = 1801.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 80
+text = "Congratulations! An Ice Sample:"
+
+[node name="TextureRect" type="TextureRect" parent="map_samples/window_ice" unique_id=1343877421]
+layout_mode = 0
+offset_left = 856.0
+offset_top = 258.0
+offset_right = 929.0
+offset_bottom = 374.0
+scale = Vector2(8, 8)
+texture = ExtResource("41_0n3wm")
+
+[node name="Label2" type="Label" parent="map_samples/window_ice" unique_id=327708521]
+layout_mode = 0
+offset_left = 170.0
+offset_top = 1200.0
+offset_right = 2034.0
+offset_bottom = 1341.0
+theme_override_font_sizes/font_size = 50
+text = "If temperatures were higher, this could be the basis for life on Pluto. 
+Unfortunately, it seems the atmosphere is too cold for most simple organisms
+to survive."
+
+[node name="ButtonIce" type="Button" parent="map_samples/window_ice" unique_id=1620503241]
+layout_mode = 0
+offset_left = 1786.0
+offset_top = 1572.0
+offset_right = 1936.0
+offset_bottom = 1702.0
+theme_override_font_sizes/font_size = 80
+text = ">"
+
+[node name="Sunset_Photo" type="TextureRect" parent="map_samples" unique_id=1954902756]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 48.0
+offset_right = 1663.0
+offset_bottom = 1524.0
+scale = Vector2(0.67, 0.67)
+texture = ExtResource("65_phcyf")
+script = ExtResource("64_gx4rg")
+
+[node name="CameraLens" type="TextureRect" parent="map_samples/Sunset_Photo" unique_id=1982533161]
+layout_mode = 0
+offset_left = 3.0007553
+offset_top = 18.004478
+offset_right = 531.00073
+offset_bottom = 490.0045
+scale = Vector2(3.05, 3.05)
+texture = ExtResource("60_wy5fy")
+
+[node name="exitSunset" type="Button" parent="map_samples/Sunset_Photo" unique_id=537939155]
+layout_mode = 0
+offset_left = 1510.8774
+offset_top = 3.0007267
+offset_right = 1622.8774
+offset_bottom = 121.000725
+theme_override_font_sizes/font_size = 80
+text = "x"
+
+[node name="ColorRect" type="ColorRect" parent="map_samples/Sunset_Photo" unique_id=1600758761]
+layout_mode = 0
+offset_left = 25.373133
+offset_top = 1244.776
+offset_right = 895.52234
+offset_bottom = 1459.7014
+color = Color(0.28235295, 0.28235295, 0.28235295, 1)
+
+[node name="Label" type="Label" parent="map_samples/Sunset_Photo/ColorRect" unique_id=1470381791]
+layout_mode = 0
+offset_left = 20.895521
+offset_top = 26.86576
+offset_right = 765.8955
+offset_bottom = 135.86575
+theme_override_font_sizes/font_size = 38
+text = "The sun from Pluto. Since the sun is so far
+and Pluto's atmosphere is so sparse, sunrise
+and sunset on Pluto are light blue."
+
+[node name="Start" type="Control" parent="." unique_id=858528570]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("46_hrvbo")
+
+[node name="ColorRect" type="ColorRect" parent="Start" unique_id=815714590]
+layout_mode = 0
+offset_right = 1919.0
+offset_bottom = 1078.0
+color = Color(0.9981604, 0.7628869, 1, 1)
+
+[node name="Frame" type="ColorRect" parent="Start/ColorRect" unique_id=2097712346]
+layout_mode = 0
+offset_left = 435.0
+offset_top = 285.0
+offset_right = 1479.0
+offset_bottom = 728.0
+color = Color(0.50271857, 0.50271857, 0.5027185, 1)
+script = ExtResource("47_uypp3")
+
+[node name="title" type="Label" parent="Start/ColorRect/Frame" unique_id=91508774]
+layout_mode = 0
+offset_left = 369.0
+offset_top = 44.0
+offset_right = 866.0
+offset_bottom = 127.0
+theme_override_font_sizes/font_size = 60
+text = "Dr. Hopper"
+
+[node name="doctorsad" type="Sprite2D" parent="Start/ColorRect/Frame" unique_id=1760695250]
+position = Vector2(170, 224)
+texture = ExtResource("48_4w656")
+script = ExtResource("49_e71vb")
+
+[node name="doctor" type="Sprite2D" parent="Start/ColorRect/Frame" unique_id=1395476438]
+position = Vector2(170, 224)
+texture = ExtResource("48_blkrb")
+script = ExtResource("51_rnkwl")
+
+[node name="text1" type="Label" parent="Start/ColorRect/Frame" unique_id=1656891026]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 133.0
+offset_right = 984.0
+offset_bottom = 265.0
+theme_override_font_sizes/font_size = 30
+text = "I'm finally sending the first rover to visit 
+Pluto! I'd like to collect three samples from
+this mission, as well as three photos.
+The only thing is..."
+script = ExtResource("49_abqjc")
+
+[node name="Button1" type="Button" parent="Start/ColorRect/Frame/text1" unique_id=334924457]
+layout_mode = 0
+offset_left = 549.0
+offset_top = 217.0
+offset_right = 606.0
+offset_bottom = 270.0
+theme_override_font_sizes/font_size = 32
+text = ">"
+
+[node name="text2" type="Label" parent="Start/ColorRect/Frame" unique_id=1438441179]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 133.0
+offset_right = 984.0
+offset_bottom = 265.0
+theme_override_font_sizes/font_size = 30
+text = "...what do I call it?"
+script = ExtResource("50_6iyjs")
+
+[node name="Button2" type="Button" parent="Start/ColorRect/Frame/text2" unique_id=2028205459]
+layout_mode = 0
+offset_left = 549.0
+offset_top = 217.0
+offset_right = 606.0
+offset_bottom = 270.0
+theme_override_font_sizes/font_size = 32
+text = ">"
+
+[node name="text3" type="Label" parent="Start/ColorRect/Frame" unique_id=802790254]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 133.0
+offset_right = 984.0
+offset_bottom = 265.0
+theme_override_font_sizes/font_size = 30
+text = "I've got it! I'll call it _____! All that's left to do
+is make contact with the surface of Pluto!"
+script = ExtResource("51_blkrb")
+
+[node name="Button4" type="Button" parent="Start/ColorRect/Frame/text3" unique_id=1214876048]
+layout_mode = 0
+offset_left = 549.0
+offset_top = 217.0
+offset_right = 606.0
+offset_bottom = 270.0
+theme_override_font_sizes/font_size = 32
+text = ">"
+
+[node name="roverFrame" type="ColorRect" parent="Start/ColorRect" unique_id=352399723]
+layout_mode = 0
+offset_left = 431.0
+offset_top = 607.0
+offset_right = 1477.0
+offset_bottom = 869.0
+color = Color(0.5019608, 0.5019608, 0.5019608, 1)
+script = ExtResource("51_uypp3")
+
+[node name="roverAgain" type="Sprite2D" parent="Start/ColorRect/roverFrame" unique_id=705631179]
+position = Vector2(493, -241)
+scale = Vector2(2, 2)
+texture = ExtResource("2_h2yge")
+
+[node name="Label" type="Label" parent="Start/ColorRect/roverFrame" unique_id=685036621]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 34.0
+offset_right = 690.0
+offset_bottom = 89.0
+theme_override_font_sizes/font_size = 40
+text = "What should the rover be called?"
+
+[node name="enterRoverName" type="LineEdit" parent="Start/ColorRect/roverFrame" unique_id=1639060634]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 108.0
+offset_right = 557.0
+offset_bottom = 173.0
+theme_override_font_sizes/font_size = 32
+placeholder_text = "Enter Name: "
+script = ExtResource("91_lwnsi")
+
+[node name="Button3" type="Button" parent="Start/ColorRect/roverFrame" unique_id=1110820856]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.022000002
+anchor_bottom = 0.10700001
+offset_left = 570.0
+offset_top = 109.0
+offset_right = 620.988
+offset_bottom = 141.966
+theme_override_font_sizes/font_size = 32
+text = ">"
+script = ExtResource("92_41lik")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Start/ColorRect/roverFrame/Button3" unique_id=1899933300]
+stream = ExtResource("104_tko6h")
+parameters/looping = true
+script = ExtResource("105_am8a1")
+
+[node name="Win" type="Control" parent="." unique_id=672393930]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FinishButton" type="Button" parent="Win" unique_id=944550775]
+layout_mode = 0
+offset_left = 1728.0
+offset_top = 573.0
+offset_right = 1874.0
+offset_bottom = 636.0
+theme_override_font_sizes/font_size = 32
+text = "Finish >"
+script = ExtResource("91_n5t1e")
+
+[node name="ColorRect" type="ColorRect" parent="Win" unique_id=270132367]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1083.0
+color = Color(0.99607843, 0.7607843, 1, 1)
+script = ExtResource("92_h6isl")
+
+[node name="Frame" type="ColorRect" parent="Win/ColorRect" unique_id=1470734156]
+layout_mode = 0
+offset_left = 435.0
+offset_top = 285.0
+offset_right = 1479.0
+offset_bottom = 728.0
+color = Color(0.50271857, 0.50271857, 0.5027185, 1)
+
+[node name="nobelPrize" type="Sprite2D" parent="Win/ColorRect/Frame" unique_id=213378132]
+position = Vector2(214, 223)
+texture = ExtResource("93_53bls")
+
+[node name="award" type="Label" parent="Win/ColorRect/Frame" unique_id=2012715118]
+layout_mode = 0
+offset_left = 365.0
+offset_top = 48.0
+offset_right = 999.0
+offset_bottom = 270.0
+theme_override_font_sizes/font_size = 30
+text = "\"The Nobel Prize in Physics is awarded 
+to you and Dr. Hopper for building and 
+launching the _________ to Pluto and 
+discovering ________, the first living organism
+on another planet.\""
+script = ExtResource("96_jbvwl")
+
+[node name="Lose" type="Control" parent="." unique_id=1079692062]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="gameOver" type="ColorRect" parent="Lose" unique_id=1581413021]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1083.0
+color = Color(0.99607843, 0.7607843, 1, 1)
+script = ExtResource("98_yvsr8")
+
+[node name="Frame" type="ColorRect" parent="Lose/gameOver" unique_id=902631795]
+layout_mode = 0
+offset_left = 435.0
+offset_top = 285.0
+offset_right = 1479.0
+offset_bottom = 728.0
+color = Color(0.50271857, 0.50271857, 0.5027185, 1)
+
+[node name="sadHopper" type="Sprite2D" parent="Lose/gameOver/Frame" unique_id=1043308372]
+position = Vector2(171, 223)
+texture = ExtResource("48_4w656")
+
+[node name="title" type="Label" parent="Lose/gameOver/Frame" unique_id=1552256427]
+layout_mode = 0
+offset_left = 369.0
+offset_top = 44.0
+offset_right = 866.0
+offset_bottom = 127.0
+theme_override_font_sizes/font_size = 60
+text = "Dr. Hopper"
+
+[node name="text1" type="Label" parent="Lose/gameOver/Frame" unique_id=455325674]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 133.0
+offset_right = 984.0
+offset_bottom = 236.0
+theme_override_font_sizes/font_size = 30
+text = "That's it, the rover can't move any further.
+I'll have to build another one..."
+
+[node name="end" type="Label" parent="Lose/gameOver/Frame" unique_id=1906445833]
+layout_mode = 0
+offset_left = 368.0
+offset_top = 243.0
+offset_right = 980.0
+offset_bottom = 353.0
+theme_override_font_sizes/font_size = 80
+text = "GAME OVER!"
+
+[connection signal="pressed" from="InfoFrame/Info" to="InfoFrame/Info" method="_on_pressed"]
+[connection signal="button_down" from="Rover Controls/Forward" to="Rover" method="_on_forward_button_down"]
+[connection signal="button_up" from="Rover Controls/Forward" to="Rover" method="_on_forward_button_up"]
+[connection signal="button_down" from="Rover Controls/Backward" to="Rover" method="_on_backward_button_down"]
+[connection signal="button_up" from="Rover Controls/Backward" to="Rover" method="_on_backward_button_up"]
+[connection signal="button_down" from="Rover Controls/Left" to="Rover" method="_on_left_button_down"]
+[connection signal="button_up" from="Rover Controls/Left" to="Rover" method="_on_left_button_up"]
+[connection signal="button_down" from="Rover Controls/Right" to="Rover" method="_on_right_button_down"]
+[connection signal="button_up" from="Rover Controls/Right" to="Rover" method="_on_right_button_up"]
+[connection signal="button_down" from="Rover Controls/RotateClockwise" to="Rover/Arrow" method="_on_rotate_clockwise_button_down"]
+[connection signal="button_up" from="Rover Controls/RotateClockwise" to="Rover/Arrow" method="_on_rotate_clockwise_button_up"]
+[connection signal="button_down" from="Rover Controls/RotateCounterClockwise" to="Rover/Arrow" method="_on_rotate_counter_clockwise_button_down"]
+[connection signal="button_up" from="Rover Controls/RotateCounterClockwise" to="Rover/Arrow" method="_on_rotate_counter_clockwise_button_up"]
+[connection signal="pressed" from="Samples/ice" to="map_samples/window_ice" method="_on_ice_pressed"]
+[connection signal="pressed" from="Samples/rock" to="map_samples/window_rock" method="_on_rock_pressed"]
+[connection signal="pressed" from="Samples/microorganism" to="map_samples/mo_info" method="_on_microorganism_pressed"]
+[connection signal="pressed" from="Samples/SampleCollection" to="Samples/SampleCollection/Sample_Window" method="_on_sample_collection_pressed"]
+[connection signal="pressed" from="Samples/SampleCollection" to="Samples/SampleCollection/Sample_Window/microorganism_window" method="_on_sample_collection_pressed"]
+[connection signal="pressed" from="Samples/SampleCollection" to="Samples/SampleCollection/Sample_Window/spacerock_window" method="_on_sample_collection_pressed"]
+[connection signal="pressed" from="Samples/SampleCollection" to="Samples/SampleCollection/Sample_Window/icesample_window" method="_on_sample_collection_pressed"]
+[connection signal="pressed" from="Samples/SampleCollection/Sample_Window/Exit" to="Samples/SampleCollection/Sample_Window" method="_on_exit_pressed"]
+[connection signal="pressed" from="Gallery/Valley" to="map_samples/Valley_Photo" method="_on_valley_pressed"]
+[connection signal="button_up" from="Gallery/Volcano" to="Gallery/Valley" method="_on_volcano_button_up"]
+[connection signal="button_up" from="Gallery/Volcano" to="map_samples/Volcano_photo" method="_on_volcano_button_up"]
+[connection signal="pressed" from="Gallery/Sunset" to="map_samples/Sunset_Photo" method="_on_sunset_pressed"]
+[connection signal="pressed" from="Gallery/Camera" to="Gallery/Camera/Gallery_Window" method="_on_camera_pressed"]
+[connection signal="pressed" from="Gallery/Camera" to="Gallery/Camera/Gallery_Window/Volcano_text" method="_on_sample_collection_pressed"]
+[connection signal="pressed" from="Gallery/Camera" to="Gallery/Camera/Gallery_Window/Valley_text" method="_on_sample_collection_pressed"]
+[connection signal="pressed" from="Gallery/Camera" to="Gallery/Camera/Gallery_Window/Sunset_text" method="_on_camera_pressed"]
+[connection signal="pressed" from="Gallery/Camera/Gallery_Window/Exit" to="Gallery/Camera/Gallery_Window" method="_on_exit_pressed"]
+[connection signal="pressed" from="map_samples/Volcano_photo/exitVolcano" to="Gallery/Volcano" method="_on_exit_volcano_pressed"]
+[connection signal="pressed" from="map_samples/Volcano_photo/exitVolcano" to="map_samples/Volcano_photo" method="_on_exit_volcano_pressed"]
+[connection signal="pressed" from="map_samples/Volcano_photo/exitVolcano" to="Gallery/Sunset" method="_on_exit_volcano_pressed"]
+[connection signal="pressed" from="map_samples/Volcano_photo/exitVolcano" to="Gallery/Camera/Gallery_Window" method="_on_exit_volcano_pressed"]
+[connection signal="pressed" from="map_samples/Valley_Photo/exitValley" to="Gallery/Valley" method="_on_exit_valley_pressed"]
+[connection signal="pressed" from="map_samples/Valley_Photo/exitValley" to="map_samples/Valley_Photo" method="_on_exit_valley_pressed"]
+[connection signal="pressed" from="map_samples/Valley_Photo/exitValley" to="Gallery/Camera/Gallery_Window" method="_on_exit_valley_pressed"]
+[connection signal="text_submitted" from="map_samples/window/organismName" to="map_samples/window/ButtonNext" method="_on_organism_name_text_submitted"]
+[connection signal="text_submitted" from="map_samples/window/organismName" to="Win/ColorRect/Frame/award" method="_on_organism_name_text_submitted"]
+[connection signal="pressed" from="map_samples/window/ButtonNext" to="Samples/microorganism" method="_on_button_next_pressed"]
+[connection signal="pressed" from="map_samples/window/ButtonNext" to="map_samples/window" method="_on_button_next_pressed"]
+[connection signal="pressed" from="map_samples/window/ButtonNext" to="Samples/SampleCollection/Sample_Window" method="_on_button_next_pressed"]
+[connection signal="pressed" from="map_samples/mo_info/littleFella" to="map_samples/mo_info" method="_on_little_fella_pressed"]
+[connection signal="pressed" from="map_samples/mo_info/littleFella" to="map_samples/window" method="_on_little_fella_pressed"]
+[connection signal="pressed" from="map_samples/window_rock/ButtonRock" to="Samples/rock" method="_on_button_rock_pressed"]
+[connection signal="pressed" from="map_samples/window_rock/ButtonRock" to="map_samples/window_rock" method="_on_button_rock_pressed"]
+[connection signal="pressed" from="map_samples/window_rock/ButtonRock" to="Samples/SampleCollection/Sample_Window" method="_on_button_rock_pressed"]
+[connection signal="pressed" from="map_samples/window_ice/ButtonIce" to="Samples/ice" method="_on_button_ice_pressed"]
+[connection signal="pressed" from="map_samples/window_ice/ButtonIce" to="map_samples/window_ice" method="_on_button_ice_pressed"]
+[connection signal="pressed" from="map_samples/window_ice/ButtonIce" to="Samples/SampleCollection/Sample_Window" method="_on_button_ice_pressed"]
+[connection signal="pressed" from="map_samples/Sunset_Photo/exitSunset" to="Gallery/Sunset" method="_on_exit_sunset_pressed"]
+[connection signal="pressed" from="map_samples/Sunset_Photo/exitSunset" to="map_samples/Sunset_Photo" method="_on_exit_sunset_pressed"]
+[connection signal="pressed" from="map_samples/Sunset_Photo/exitSunset" to="Gallery/Camera/Gallery_Window" method="_on_exit_sunset_pressed"]
+[connection signal="pressed" from="Start/ColorRect/Frame/text1/Button1" to="Start/ColorRect/Frame/text1" method="_on_button_1_pressed"]
+[connection signal="pressed" from="Start/ColorRect/Frame/text1/Button1" to="Start/ColorRect/Frame/text2" method="_on_button_1_pressed"]
+[connection signal="pressed" from="Start/ColorRect/Frame/text2/Button2" to="Start/ColorRect/Frame" method="_on_button_2_pressed"]
+[connection signal="pressed" from="Start/ColorRect/Frame/text2/Button2" to="Start/ColorRect/Frame/doctorsad" method="_on_button_2_pressed"]
+[connection signal="pressed" from="Start/ColorRect/Frame/text2/Button2" to="Start/ColorRect/Frame/text1" method="_on_button_2_pressed"]
+[connection signal="pressed" from="Start/ColorRect/Frame/text2/Button2" to="Start/ColorRect/Frame/text2" method="_on_button_2_pressed"]
+[connection signal="pressed" from="Start/ColorRect/Frame/text2/Button2" to="Start/ColorRect/roverFrame" method="_on_button_2_pressed"]
+[connection signal="pressed" from="Start/ColorRect/Frame/text3/Button4" to="Start" method="_on_button_4_pressed"]
+[connection signal="pressed" from="Start/ColorRect/Frame/text3/Button4" to="Start/ColorRect/roverFrame/Button3/AudioStreamPlayer2D" method="_on_button_4_pressed"]
+[connection signal="text_submitted" from="Start/ColorRect/roverFrame/enterRoverName" to="Start/ColorRect/Frame/text3" method="_on_enter_rover_name_text_submitted"]
+[connection signal="text_submitted" from="Start/ColorRect/roverFrame/enterRoverName" to="Start/ColorRect/roverFrame/Button3" method="_on_enter_rover_name_text_submitted"]
+[connection signal="text_submitted" from="Start/ColorRect/roverFrame/enterRoverName" to="Win/ColorRect/Frame/award" method="_on_enter_rover_name_text_submitted"]
+[connection signal="pressed" from="Start/ColorRect/roverFrame/Button3" to="Start/ColorRect/Frame" method="_on_button_3_pressed"]
+[connection signal="pressed" from="Start/ColorRect/roverFrame/Button3" to="Start/ColorRect/Frame/doctor" method="_on_button_3_pressed"]
+[connection signal="pressed" from="Start/ColorRect/roverFrame/Button3" to="Start/ColorRect/Frame/text3" method="_on_button_3_pressed"]
+[connection signal="pressed" from="Start/ColorRect/roverFrame/Button3" to="Start/ColorRect/roverFrame" method="_on_button_3_pressed"]
+[connection signal="pressed" from="Start/ColorRect/roverFrame/Button3" to="Start/ColorRect/roverFrame/Button3/AudioStreamPlayer2D" method="_on_button_3_pressed"]
+[connection signal="pressed" from="Win/FinishButton" to="Win/ColorRect" method="_on_finish_button_pressed"]
