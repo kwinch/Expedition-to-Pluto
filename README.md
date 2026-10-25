@@ -22,3 +22,6 @@ We programmed the game entirely using GDScript in Godot 4.7.2. For boilerplate c
 ## Future State
 
 Although you can orient the position of the camera using the controls, we weren't able to do everything we wanted regarding the camera including positional camera shots. This is a capability we would consider adding as a 3D feature, such that the rover can view a 3D scene and capture a photo from the 2D game. Additionally, we intended to add more sample options, rover animations, and additional map tiles in all four directions to flesh out the world, but we weren't able to create these assets in the time allotted. In the future, we would consider adding different map sections with more samples and vista points. We understand we have room to make "Dr. Hopper's Expedition to Pluto" even better, but we are immensely proud of the work we have completed thus far.
+
+## Video Demo: 
+https://youtu.be/n351V1x5N6A
