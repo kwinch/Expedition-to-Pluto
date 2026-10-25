@@ -10,6 +10,7 @@ Dr. Hopper's Expedition to Pluto will have players juggling their HP and battery
 ## Inspiration
 
 We took information and inspiration from NASA's discoveries of the surface of Pluto, including the 2015 New Horizons Flyby, found here: https://science.nasa.gov/mission/new-horizons/
+
 Did you know that the surface of Pluto can reach -387 degrees Fahrenheit? Also, it takes Pluto about seven Earth days to complete a rotation, making a full day on Pluto last about 156 hours. The Sun as seen from Pluto is only 1/900th as bright as the Sun from Earth. All these facts, as well as our optimism about future research on the surface of Pluto, served as our inspiration for "Dr. Hopper's Expedition to Pluto". 
 
 ## Setup
